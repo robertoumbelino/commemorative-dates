@@ -4,6 +4,11 @@ import { Box, Flex, Heading, Text } from '@chakra-ui/layout'
  * Component.
  */
 export function Header() {
+  /**
+   * Get formmated current date.
+   */
+  const currentDate = new Date().toLocaleDateString('pt-BR')
+
   return (
     <Box bg="darkLight" paddingTop="50px" paddingBottom="50px" color="white">
       <Flex alignItems="center" direction="column">
@@ -11,7 +16,7 @@ export function Header() {
           Comemoração
         </Heading>
         <Text color="secondary" fontSize={32}>
-          17/10/2021
+          {currentDate}
         </Text>
       </Flex>
     </Box>
