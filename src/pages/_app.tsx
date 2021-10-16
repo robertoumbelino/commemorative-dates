@@ -3,12 +3,12 @@ import Head from 'next/head'
 /**
  * Theme.
  */
-import { ThemeProvider } from 'styled-components'
+import { ChakraProvider } from '@chakra-ui/react'
 
 /**
  * Styles.
  */
-import { GlobalStyles, theme } from '../styles/GlobalStyles'
+import { theme } from '../styles/theme'
 
 export default function MyApp({ Component, pageProps }) {
   return (
@@ -22,14 +22,16 @@ export default function MyApp({ Component, pageProps }) {
         />
         <meta name="viewport" content="uc-fitscreen=yes" />
 
-        <meta name="description" content="Next PWA Boilerplate" />
+        <meta
+          name="description"
+          content="Acompanhe as datas comemorativas do dia atual"
+        />
         <meta name="keywords" content="Keywords" />
       </Head>
 
-      <ThemeProvider theme={theme}>
-        <GlobalStyles />
+      <ChakraProvider theme={theme}>
         <Component {...pageProps} />
-      </ThemeProvider>
+      </ChakraProvider>
     </>
   )
 }

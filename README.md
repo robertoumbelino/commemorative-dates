@@ -24,7 +24,7 @@ Technologies used in this project.
 
 - [Typescript](https://www.typescriptlang.org/)
 - [React](https://pt-br.reactjs.org/)
-- [Styled Components](https://styled-components.com/)
+- [Chakra UI](https://chakra-ui.com/)
 - [Next](https://vercel.com/solutions/nextjs)
 - [Next PWA](https://www.npmjs.com/package/next-pwa)
 

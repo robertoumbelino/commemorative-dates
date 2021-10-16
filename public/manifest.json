@@ -1,13 +1,13 @@
 {
-    "theme_color": "#312b47",
-    "background_color": "#312b47",
+    "theme_color": "#14162C",
+    "background_color": "#14162C",
     "display": "fullscreen",
     "orientation": "portrait",
     "scope": "/",
     "start_url": "/",
-    "name": "Next PWA",
-    "short_name": "PWA",
-    "description": "Next with PWA",
+    "name": "Datas Comemorativas",
+    "short_name": "Datas Comemorativas",
+    "description": "Acompanhe as datas comemorativas do dia atual",
     "icons": [
         {
             "src": "images/apple/manifest-icon-192.png",

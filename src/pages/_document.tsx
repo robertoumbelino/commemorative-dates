@@ -1,33 +1,11 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import { ServerStyleSheet } from 'styled-components'
 
 /**
  * Component.
  */
 export default class PWADocument extends Document {
   static async getInitialProps(ctx) {
-    const sheet = new ServerStyleSheet()
-    const originalRenderPage = ctx.renderPage
-
-    try {
-      ctx.renderPage = () =>
-        originalRenderPage({
-          enhanceApp: App => props => sheet.collectStyles(<App {...props} />)
-        })
-
-      const initialProps = await Document.getInitialProps(ctx)
-      return {
-        ...initialProps,
-        styles: (
-          <>
-            {initialProps.styles}
-            {sheet.getStyleElement()}
-          </>
-        )
-      }
-    } finally {
-      sheet.seal()
-    }
+    return Document.getInitialProps(ctx)
   }
 
   render() {
@@ -38,7 +16,10 @@ export default class PWADocument extends Document {
           <meta name="mobile-web-app-capable" content="yes" />
 
           <meta name="apple-mobile-web-app-capable" content="yes" />
-          <meta name="apple-mobile-web-app-title" content="Next PWA" />
+          <meta
+            name="apple-mobile-web-app-title"
+            content="Datas Comemorativas"
+          />
           <meta
             name="apple-mobile-web-app-status-bar-style"
             content="default"
@@ -50,7 +31,7 @@ export default class PWADocument extends Document {
           <meta name="msapplication-TileImage" content="ms-icon-144x144.png" />
 
           <meta name="msapplication-starturl" content="/" />
-          <meta name="application-name" content="Next PWA" />
+          <meta name="application-name" content="Datas Comemorativas" />
           <meta name="msapplication-tap-highlight" content="no" />
           <meta name="msapplication-tooltip" content="Tooltip Text" />
 
