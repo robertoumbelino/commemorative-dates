@@ -13,7 +13,7 @@ type CommemorativeDate = {
 }
 
 const URL =
-  'http://commemorative-dates-api.herokuapp.com/current-commemorative-dates'
+  'https://commemorative-dates-api.herokuapp.com/current-commemorative-dates'
 
 /**
  * Hook.
