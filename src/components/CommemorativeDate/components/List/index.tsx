@@ -29,7 +29,7 @@ const images = [
   'natal-decorative',
   'party',
   'people',
-  'rocket',
+  'racket',
   'stamp',
   'thing'
 ]
