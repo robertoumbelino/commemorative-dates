@@ -12,7 +12,7 @@ export default class PWADocument extends Document {
     return (
       <Html lang="pt-BR">
         <Head>
-          <meta name="theme-color" content="red" />
+          <meta name="theme-color" content="#14162C" />
           <meta name="mobile-web-app-capable" content="yes" />
 
           <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -25,8 +25,8 @@ export default class PWADocument extends Document {
             content="default"
           />
 
-          <meta name="msapplication-TileColor" content="red" />
-          <meta name="msapplication-navbutton-color" content="red" />
+          <meta name="msapplication-TileColor" content="#14162C" />
+          <meta name="msapplication-navbutton-color" content="#14162C" />
           <meta name="msapplication-config" content="browserconfig.xml" />
           <meta name="msapplication-TileImage" content="ms-icon-144x144.png" />
 
