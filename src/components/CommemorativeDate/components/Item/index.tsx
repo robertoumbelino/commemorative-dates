@@ -1,7 +1,8 @@
 /**
  * Components.
  */
-import Image from 'next/image'
+// import Image from 'next/image'
+import { Image } from '@chakra-ui/react'
 import { Flex, Text } from '@chakra-ui/layout'
 
 /**
@@ -23,10 +24,7 @@ export function CommemorativeDateListItem({ image, label }: ListItemProps) {
       <Image
         src={`/images/assets/${image}.svg`}
         alt="Logo"
-        sizes="250px"
-        layout="fixed"
-        width={1000}
-        height={700}
+        height="40vh"
         onDragStart={handleDragStart}
       />
       <Text fontSize={40} textAlign="center">

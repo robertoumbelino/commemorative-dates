@@ -35,7 +35,7 @@ export const theme = extendTheme({
       },
 
       '.alice-carousel__dots': {
-        marginTop: 200
+        marginTop: '15vh'
       }
     }
   },
