@@ -12,9 +12,6 @@ type CommemorativeDate = {
   title: string
 }
 
-const URL =
-  'https://commemorative-dates-api.herokuapp.com/current-commemorative-dates'
-
 /**
  * Hook.
  */
@@ -25,8 +22,7 @@ export const useCommemorativeDate = () => {
    * Get current commemorative dates.
    */
   const loadCurrentCommemorativeDates = async () => {
-    const { data } = await axios.get<CommemorativeDate[]>(URL)
-
+    const { data } = await axios.get<CommemorativeDate[]>('/api/current')
     const labels = data.map(item => item.title)
 
     setCommemorativeDates(labels)
