@@ -10,7 +10,7 @@ export function Header() {
   const currentDate = new Date().toLocaleDateString('pt-BR')
 
   return (
-    <Box bg="darkLight" paddingTop="20px" paddingBottom="20px" color="white">
+    <Box bg="darkLight" paddingTop="30px" paddingBottom="30px" color="white">
       <Flex alignItems="center" direction="column">
         <Heading as="h1" size="lg" marginBottom="4px">
           Comemoração
