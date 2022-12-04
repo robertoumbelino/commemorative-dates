@@ -47,7 +47,12 @@ export function CommemorativeDateList() {
   if (loading) {
     return (
       <Flex flex={1} justifyContent="center" alignItems="center">
-        <Spinner color="primary" thickness="10px" width={300} height={300} />
+        <Spinner
+          color="primary"
+          thickness="10px"
+          width="150px"
+          height="150px"
+        />
       </Flex>
     )
   }
