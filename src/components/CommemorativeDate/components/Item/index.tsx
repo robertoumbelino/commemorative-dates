@@ -27,7 +27,7 @@ export function CommemorativeDateListItem({ image, label }: ListItemProps) {
         height="40vh"
         onDragStart={handleDragStart}
       />
-      <Text fontSize={40} textAlign="center">
+      <Text fontSize={18} textAlign="center">
         {label}
       </Text>
     </Flex>

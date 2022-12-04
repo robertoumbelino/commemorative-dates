@@ -14,11 +14,11 @@ export function Dot({ isActive }: DotProps) {
   return (
     <Box
       bg={isActive ? 'primary' : 'secondary'}
-      width={30}
-      height={30}
+      width="14px"
+      height="14px"
       rounded="full"
-      marginLeft={3}
-      marginRight={3}
+      marginLeft="3px"
+      marginRight="3px"
     />
   )
 }

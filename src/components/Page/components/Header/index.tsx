@@ -12,10 +12,10 @@ export function Header() {
   return (
     <Box bg="darkLight" paddingTop="50px" paddingBottom="50px" color="white">
       <Flex alignItems="center" direction="column">
-        <Heading as="h1" size="2xl" marginBottom={4}>
+        <Heading as="h1" size="lg" marginBottom="4px">
           Comemoração
         </Heading>
-        <Text color="secondary" fontSize="3xl">
+        <Text color="secondary" fontSize="1xl">
           {currentDate}
         </Text>
       </Flex>
